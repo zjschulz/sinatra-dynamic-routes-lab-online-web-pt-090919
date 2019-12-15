@@ -29,5 +29,6 @@ class App < Sinatra::Base
     @w5 = params[:word5]
     "#{@w1} #{@w2} #{@w3} #{@w4} #{@w5}."
   end
-
+  
+  get "/:operat"
 end

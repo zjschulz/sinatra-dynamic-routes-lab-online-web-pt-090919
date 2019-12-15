@@ -38,13 +38,13 @@ class App < Sinatra::Base
     @subtract = @num1.to_i - @num2.to_i
     @multiply = @num1.to_i * @num2.to_i
     @divide = @num1.to_i % @num2.to_i
-    if @op = "add"
+    if @op == "add"
       "#{@add}"
-    elsif @op = "subtract"
+    elsif @op == "subtract"
       "#{@subtract}"
-    elsif @op = "multiply"
+    elsif @op == "multiply"
       "#{@multiply}"
-    elsif @op = "divide"
+    elsif @op == "divide"
       "#{@divide}"
     end
   end

@@ -30,5 +30,9 @@ class App < Sinatra::Base
     "#{@w1} #{@w2} #{@w3} #{@w4} #{@w5}."
   end
   
-  get "/:operat"
+  get "/:operation/:number1/:number2" do
+    @num1 = params[:number1]
+    @num2 = params[:number2]
+    @op = params[:operation]
+  end
 end

@@ -20,5 +20,7 @@ class App < Sinatra::Base
     @string = @phrase * @num.to_i
     "#{@string}"
   end
-  
+
+  get:
+
 end

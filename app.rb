@@ -37,7 +37,7 @@ class App < Sinatra::Base
     @add = @num1.to_i + @num2.to_i
     @subtract = @num1.to_i - @num2.to_i
     @multiply = @num1.to_i * @num2.to_i
-    @divide = @num1.to_i % @num2.to_i
+    @divide = @num1.to_i / @num2.to_i
     if @op == "add"
       "#{@add}"
     elsif @op == "subtract"
